@@ -1,0 +1,51 @@
+======================================================================
+CIFAR-10N (WORST SPLIT) - TASK 1 NOISE PROFILING SUMMARY
+======================================================================
+
+Total training samples:         45,000
+Mislabeled training samples:    18,109
+Correctly labeled samples:      26,891
+Training noise rate:            40.2422%
+
+----------------------------------------------------------------------
+CONFUSION MATRIX CONVENTION
+----------------------------------------------------------------------
+Rows    = True Ground-Truth Label (clean_label)
+Columns = Observed Crowd-Worker Label (noisy_label)
+Diagonal = Human annotations that match ground truth
+Off-diagonal = Human annotation errors
+
+----------------------------------------------------------------------
+TOP 15 MOST FREQUENT CONFUSION PAIRS (Clean -> Noisy)
+----------------------------------------------------------------------
+Clean (True)    -> Noisy (Observed)    Count  % of True Class
+----------------------------------------------------------------------
+truck           -> automobile           1247           27.87%
+automobile      -> truck                1126           25.04%
+cat             -> dog                   924           20.68%
+dog             -> cat                   834           18.40%
+deer            -> horse                 683           15.13%
+deer            -> dog                   491           10.88%
+airplane        -> ship                  379            8.41%
+frog            -> bird                  373            8.28%
+ship            -> airplane              369            8.21%
+cat             -> bird                  354            7.92%
+frog            -> cat                   350            7.77%
+ship            -> automobile            333            7.41%
+deer            -> bird                  316            7.00%
+airplane        -> bird                  314            6.97%
+airplane        -> automobile            293            6.50%
+
+----------------------------------------------------------------------
+PER-CLASS CLEAN ACCURACY (Human Label Agreement with Clean)
+----------------------------------------------------------------------
+Class 0 (airplane   ):  64.93% agreement ( 35.07% noise, 1,580/4,505 mislabeled)
+Class 1 (automobile ):  59.10% agreement ( 40.90% noise, 1,839/4,496 mislabeled)
+Class 2 (bird       ):  63.10% agreement ( 36.90% noise, 1,662/4,504 mislabeled)
+Class 3 (cat        ):  48.51% agreement ( 51.49% noise, 2,301/4,469 mislabeled)
+Class 4 (deer       ):  48.64% agreement ( 51.36% noise, 2,318/4,513 mislabeled)
+Class 5 (dog        ):  57.80% agreement ( 42.20% noise, 1,913/4,533 mislabeled)
+Class 6 (frog       ):  59.43% agreement ( 40.57% noise, 1,827/4,503 mislabeled)
+Class 7 (horse      ):  72.04% agreement ( 27.96% noise, 1,260/4,506 mislabeled)
+Class 8 (ship       ):  68.42% agreement ( 31.58% noise, 1,420/4,496 mislabeled)
+Class 9 (truck      ):  55.55% agreement ( 44.45% noise, 1,989/4,475 mislabeled)

@@ -1,0 +1,36 @@
+{
+  "name": "",
+  "roll_no": "",
+  "seed": 0,
+  "training_setup": {
+    "optimizer": "",
+    "learning_rate_schedule": "",
+    "batch_size": 0,
+    "epochs": 0,
+    "augmentation": "",
+    "gpu_used": ""
+  },
+  "task1": {
+    "noise_rate": null,
+    "val_acc_noisy_labels__clean_ref_model": null,
+    "val_acc_noisy_labels__noisy_ce_model": null
+  },
+  "task2": {
+    "memorization_start_epoch": null,
+    "early_stop_epoch": null,
+    "val_acc_noisy_labels_at_early_stop": null
+  },
+  "task3": {
+    "method": ""
+  },
+  "task4": {
+    "methods": [
+      {"name": "", "file": "t4_<name>.csv", "val_acc_noisy_labels": null}
+    ],
+    "best_method": ""
+  },
+  "task5": {
+    "val_acc_synthetic_labels__baseline": null,
+    "val_acc_synthetic_labels__best_method": null
+  }
+}

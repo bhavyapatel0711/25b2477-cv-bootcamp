@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "roll_no": "",
+  "seed": 42,
+  "training_setup": {
+    "optimizer": "SGD, momentum=0.9, weight_decay=0.0005",
+    "learning_rate_schedule": "CosineAnnealingLR, T_max=60, eta_min=0.0001",
+    "batch_size": 128,
+    "epochs": 60,
+    "augmentation": "RandomCrop(32, padding=4), RandomHorizontalFlip",
+    "gpu_used": "Google Colab T4 GPU"
+  },
+  "task1": {
+    "noise_rate": 0.40242222222222224,
+    "val_acc_noisy_labels__clean_ref_model": 94.06,
+    "val_acc_noisy_labels__noisy_ce_model": 50.08
+  },
+  "task2": {
+    "memorization_start_epoch": null,
+    "early_stop_epoch": 42,
+    "val_acc_noisy_labels_at_early_stop": 55.46
+  },
+  "task3": {
+    "method": ""
+  },
+  "task4": {
+    "methods": [],
+    "best_method": ""
+  },
+  "task5": {
+    "val_acc_synthetic_labels__baseline": null,
+    "val_acc_synthetic_labels__best_method": null
+  }
+}
